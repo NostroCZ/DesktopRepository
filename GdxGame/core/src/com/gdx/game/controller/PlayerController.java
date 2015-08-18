@@ -31,7 +31,19 @@ public class PlayerController
 
     public void touchUp()
     {
-        //setMoving(false);
+        setMoving(false);
+    }
+
+    private float sinceLastMove = 0f;
+
+    public float getSinceLastMove()
+    {
+        return sinceLastMove;
+    }
+
+    public void setSinceLastMove(float sinceLastMove)
+    {
+        this.sinceLastMove = sinceLastMove;
     }
 
     /** The main update method **/
@@ -39,51 +51,55 @@ public class PlayerController
     {
         if (isMoving())
         {
-            Vector2 position = new Vector2(getWorld().getPlayer().getPosition());
-            switch (getDirectionOfMovement())
+            setSinceLastMove(getSinceLastMove() + delta);
+            if (sinceLastMove > 0.5f)
             {
-                case LEFTBOTTOM:
+                sinceLastMove = 0f;
+                Vector2 position = new Vector2(getWorld().getPlayer().getPosition());
+                switch (getDirectionOfMovement())
                 {
-                    if (position.y % 2 == 0)
+                    case LEFTBOTTOM:
                     {
-                        position.x--;
+                        if (position.y % 2 == 0)
+                        {
+                            position.x--;
+                        }
+                        position.y--;
+                        break;
                     }
-                    position.y--;
-                    break;
-                }
-                case RIGHTBOTTOM:
-                {
-                    if (position.y % 2 == 1)
+                    case RIGHTBOTTOM:
                     {
-                        position.x++;
+                        if (position.y % 2 == 1)
+                        {
+                            position.x++;
+                        }
+                        position.y--;
+                        break;
                     }
-                    position.y--;
-                    break;
-                }
-                case LEFTTOP:
-                {
-                    if (position.y % 2 == 0)
+                    case LEFTTOP:
                     {
-                        position.x--;
+                        if (position.y % 2 == 0)
+                        {
+                            position.x--;
+                        }
+                        position.y++;
+                        break;
                     }
-                    position.y++;
-                    break;
-                }
-                case RIGHTTOP:
-                {
-                    // right up
-                    if (position.y % 2 == 1)
+                    case RIGHTTOP:
                     {
-                        position.x++;
+                        // right up
+                        if (position.y % 2 == 1)
+                        {
+                            position.x++;
+                        }
+                        position.y++;
+                        break;
                     }
-                    position.y++;
-                    break;
+                    default:
+                        break;
                 }
-                default:
-                    break;
+                getWorld().getPlayer().setPosition(position);
             }
-            getWorld().getPlayer().setPosition(position);
-            setMoving(false);
         }
     }
 
