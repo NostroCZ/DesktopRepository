@@ -1,0 +1,132 @@
+
+textures.png
+size: 256,256
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+hero0
+  rotate: false
+  xy: 68, 20
+  size: 38, 48
+  orig: 38, 48
+  offset: 0, 0
+  index: -1
+object-tree1
+  rotate: false
+  xy: 2, 70
+  size: 117, 180
+  orig: 117, 180
+  offset: 0, 0
+  index: -1
+tile-grass1
+  rotate: false
+  xy: 2, 36
+  size: 64, 32
+  orig: 64, 32
+  offset: 0, 0
+  index: -1
+tile-grass10
+  rotate: false
+  xy: 121, 82
+  size: 64, 32
+  orig: 64, 32
+  offset: 0, 0
+  index: -1
+tile-grass11
+  rotate: false
+  xy: 187, 116
+  size: 64, 32
+  orig: 64, 32
+  offset: 0, 0
+  index: -1
+tile-grass12
+  rotate: false
+  xy: 187, 82
+  size: 64, 32
+  orig: 64, 32
+  offset: 0, 0
+  index: -1
+tile-grass13
+  rotate: false
+  xy: 121, 48
+  size: 64, 32
+  orig: 64, 32
+  offset: 0, 0
+  index: -1
+tile-grass14
+  rotate: false
+  xy: 187, 48
+  size: 64, 32
+  orig: 64, 32
+  offset: 0, 0
+  index: -1
+tile-grass15
+  rotate: false
+  xy: 108, 14
+  size: 64, 32
+  orig: 64, 32
+  offset: 0, 0
+  index: -1
+tile-grass16
+  rotate: false
+  xy: 174, 14
+  size: 64, 32
+  orig: 64, 32
+  offset: 0, 0
+  index: -1
+tile-grass2
+  rotate: false
+  xy: 121, 218
+  size: 64, 32
+  orig: 64, 32
+  offset: 0, 0
+  index: -1
+tile-grass3
+  rotate: false
+  xy: 2, 2
+  size: 64, 32
+  orig: 64, 32
+  offset: 0, 0
+  index: -1
+tile-grass4
+  rotate: false
+  xy: 121, 184
+  size: 64, 32
+  orig: 64, 32
+  offset: 0, 0
+  index: -1
+tile-grass5
+  rotate: false
+  xy: 187, 218
+  size: 64, 32
+  orig: 64, 32
+  offset: 0, 0
+  index: -1
+tile-grass6
+  rotate: false
+  xy: 121, 150
+  size: 64, 32
+  orig: 64, 32
+  offset: 0, 0
+  index: -1
+tile-grass7
+  rotate: false
+  xy: 187, 184
+  size: 64, 32
+  orig: 64, 32
+  offset: 0, 0
+  index: -1
+tile-grass8
+  rotate: false
+  xy: 121, 116
+  size: 64, 32
+  orig: 64, 32
+  offset: 0, 0
+  index: -1
+tile-grass9
+  rotate: false
+  xy: 187, 150
+  size: 64, 32
+  orig: 64, 32
+  offset: 0, 0
+  index: -1
